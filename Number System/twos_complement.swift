@@ -6,7 +6,7 @@
 // Convert to negative binary and back(it is the sane process) 
 
 class twos_complement{
-    func bin_to_negative{
+    func bin_to_negative(){
         // add to array here
         var inputNumber = [1,0,1,1]
         //11
@@ -33,8 +33,8 @@ class twos_complement{
                 flipNumber[i] = 0
             }
             //if the value is 0, and we still have a carry. This ends the process
-            else if flipNumber == 0 && carry == 1{
-                flipNumber[i] == 1
+            else if flipNumber[i] == 0 && carry == 1{
+                flipNumber[i] = 1
                 carry = 0
             }
         // reverse back to normal binary

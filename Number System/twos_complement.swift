@@ -3,7 +3,7 @@
 // Created by Tadeusz Sikorski 17/09/17
 //
 // Given input of binary
-// Convert to negative binary and back(it is the sane process) 
+// Convert to negative binary and back(it is the same process) 
 
 class twos_complement{
     func bin_to_negative(){
@@ -37,9 +37,13 @@ class twos_complement{
                 flipNumber[i] = 1
                 carry = 0
             }
-        // reverse back to normal binary
-        flipNumber.reverse()
+        // add 1 if carry is still 1, ie the binary was a string of 1s
+        if carry == 1{
+            flipNumber.append(1)
         }
+        // reverse back to normal binary
+        }
+        flipNumber.reverse()
         // output
     }
 }

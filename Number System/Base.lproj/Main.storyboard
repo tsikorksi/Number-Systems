@@ -10,6 +10,79 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller10-->
+        <scene sceneID="8V1-BX-pBf">
+            <objects>
+                <viewController id="c6d-qW-zuk" customClass="ViewController10" customModule="Number_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fpg-Qm-WKj"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Es-wX-Coy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kte-RE-bF3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzR-kp-qUy">
+                                <rect key="frame" x="116" y="617" width="143" height="30"/>
+                                <state key="normal" title="Return to Main Menu"/>
+                                <connections>
+                                    <action selector="CloseView:" destination="c6d-qW-zuk" eventType="touchUpInside" id="IvA-78-aWP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Au-a8-I6P">
+                                <rect key="frame" x="132" y="174" width="110" height="30"/>
+                                <state key="normal" title="Click to Convert"/>
+                                <connections>
+                                    <action selector="ConvertNow:" destination="c6d-qW-zuk" eventType="touchUpInside" id="lws-Eb-wEV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UpN-zY-WTZ">
+                                <rect key="frame" x="116" y="136" width="143" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convert Binary to Two's Compliment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdi-Eg-mdh">
+                                <rect key="frame" x="48" y="28" width="279" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ds-8b-tOh">
+                                <rect key="frame" x="16" y="252" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ihg-07-CAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UpN-zY-WTZ" firstAttribute="top" secondItem="Cdi-Eg-mdh" secondAttribute="bottom" constant="87" id="2yL-OT-owo"/>
+                            <constraint firstItem="UpN-zY-WTZ" firstAttribute="centerX" secondItem="3Au-a8-I6P" secondAttribute="centerX" id="N3o-N0-FS4"/>
+                            <constraint firstItem="3Au-a8-I6P" firstAttribute="top" secondItem="UpN-zY-WTZ" secondAttribute="bottom" constant="8" symbolic="YES" id="S8N-kn-cnx"/>
+                            <constraint firstItem="Cdi-Eg-mdh" firstAttribute="top" secondItem="Fpg-Qm-WKj" secondAttribute="bottom" constant="8" symbolic="YES" id="T6f-bs-uYD"/>
+                            <constraint firstItem="3Au-a8-I6P" firstAttribute="centerX" secondItem="3ds-8b-tOh" secondAttribute="centerX" id="UMg-Dx-ahM"/>
+                            <constraint firstItem="3ds-8b-tOh" firstAttribute="trailing" secondItem="Kte-RE-bF3" secondAttribute="trailingMargin" id="atX-hM-kzC"/>
+                            <constraint firstItem="3ds-8b-tOh" firstAttribute="top" secondItem="3Au-a8-I6P" secondAttribute="bottom" constant="48" id="b6M-dK-HSO"/>
+                            <constraint firstItem="3ds-8b-tOh" firstAttribute="leading" secondItem="Kte-RE-bF3" secondAttribute="leadingMargin" id="ebO-ui-yQM"/>
+                            <constraint firstAttribute="bottom" secondItem="GzR-kp-qUy" secondAttribute="bottom" constant="20" symbolic="YES" id="ga4-Xp-JZB"/>
+                            <constraint firstItem="UpN-zY-WTZ" firstAttribute="trailing" secondItem="GzR-kp-qUy" secondAttribute="trailing" id="kCc-3b-cuD"/>
+                            <constraint firstItem="UpN-zY-WTZ" firstAttribute="leading" secondItem="GzR-kp-qUy" secondAttribute="leading" id="md7-EO-zOh"/>
+                            <constraint firstItem="Cdi-Eg-mdh" firstAttribute="centerX" secondItem="UpN-zY-WTZ" secondAttribute="centerX" id="ogc-Qk-GrD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="InputNumber" destination="UpN-zY-WTZ" id="8mo-ha-tcE"/>
+                        <outlet property="OutputNumber" destination="3ds-8b-tOh" id="OVh-HK-xPR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EiJ-wX-EjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727.20000000000005" y="-106.59670164917542"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -127,6 +200,18 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ4-pz-TS4">
+                                <rect key="frame" x="16" y="344" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.067626303659999998" blue="0.0055676646550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Convert Binary to Two's Compliment">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="c6d-qW-zuk" kind="popoverPresentation" popoverAnchorView="LZ4-pz-TS4" id="Kol-9l-SRH">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80433451172269987" green="0.83990446891191706" blue="0.52698641984144468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.83990446891191706" green="0.69739047592065218" blue="0.72236604078326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -136,11 +221,14 @@
                             <constraint firstItem="20v-R7-lhj" firstAttribute="trailing" secondItem="mXG-jH-zAO" secondAttribute="trailing" id="47w-wS-xfQ"/>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6Xg-Ph-mlV"/>
                             <constraint firstItem="mXG-jH-zAO" firstAttribute="leading" secondItem="fLe-NQ-sRe" secondAttribute="leading" id="6mz-IS-lp6"/>
+                            <constraint firstItem="LZ4-pz-TS4" firstAttribute="leading" secondItem="bWD-hn-0En" secondAttribute="leading" id="7CP-ic-rDQ"/>
                             <constraint firstItem="bWD-hn-0En" firstAttribute="top" secondItem="Hnw-j8-GiU" secondAttribute="bottom" constant="8" symbolic="YES" id="80m-lI-wP8"/>
                             <constraint firstItem="fLe-NQ-sRe" firstAttribute="leading" secondItem="JLc-tw-lNO" secondAttribute="leading" id="84D-Pj-wyu"/>
                             <constraint firstItem="mXG-jH-zAO" firstAttribute="trailing" secondItem="fLe-NQ-sRe" secondAttribute="trailing" id="Bs9-pN-dCh"/>
+                            <constraint firstItem="LZ4-pz-TS4" firstAttribute="top" secondItem="bWD-hn-0En" secondAttribute="bottom" constant="8" symbolic="YES" id="Ewu-a5-R6a"/>
                             <constraint firstItem="bWD-hn-0En" firstAttribute="leading" secondItem="Hnw-j8-GiU" secondAttribute="leading" id="Gxm-vs-bU8"/>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LQH-DX-acc"/>
+                            <constraint firstItem="LZ4-pz-TS4" firstAttribute="trailing" secondItem="bWD-hn-0En" secondAttribute="trailing" id="M9B-Yd-tMd"/>
                             <constraint firstItem="bWD-hn-0En" firstAttribute="trailing" secondItem="Hnw-j8-GiU" secondAttribute="trailing" id="MRc-vu-aai"/>
                             <constraint firstItem="20v-R7-lhj" firstAttribute="top" secondItem="zP2-wg-Ubd" secondAttribute="bottom" constant="8" symbolic="YES" id="MwZ-4P-ZeQ"/>
                             <constraint firstItem="mXG-jH-zAO" firstAttribute="top" secondItem="20v-R7-lhj" secondAttribute="bottom" constant="8" symbolic="YES" id="Odi-CK-G6l"/>

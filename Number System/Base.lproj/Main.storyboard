@@ -115,6 +115,18 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWD-hn-0En">
+                                <rect key="frame" x="16" y="306" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.32021334991407363" green="0.83990446891191706" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Convert Base 10 to Sign and Magnitude Base 2">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jJm-XP-acr" kind="popoverPresentation" popoverAnchorView="bWD-hn-0En" id="HBO-EC-5pN">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80433451172269987" green="0.83990446891191706" blue="0.52698641984144468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.83990446891191706" green="0.69739047592065218" blue="0.72236604078326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,9 +136,12 @@
                             <constraint firstItem="20v-R7-lhj" firstAttribute="trailing" secondItem="mXG-jH-zAO" secondAttribute="trailing" id="47w-wS-xfQ"/>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6Xg-Ph-mlV"/>
                             <constraint firstItem="mXG-jH-zAO" firstAttribute="leading" secondItem="fLe-NQ-sRe" secondAttribute="leading" id="6mz-IS-lp6"/>
+                            <constraint firstItem="bWD-hn-0En" firstAttribute="top" secondItem="Hnw-j8-GiU" secondAttribute="bottom" constant="8" symbolic="YES" id="80m-lI-wP8"/>
                             <constraint firstItem="fLe-NQ-sRe" firstAttribute="leading" secondItem="JLc-tw-lNO" secondAttribute="leading" id="84D-Pj-wyu"/>
                             <constraint firstItem="mXG-jH-zAO" firstAttribute="trailing" secondItem="fLe-NQ-sRe" secondAttribute="trailing" id="Bs9-pN-dCh"/>
+                            <constraint firstItem="bWD-hn-0En" firstAttribute="leading" secondItem="Hnw-j8-GiU" secondAttribute="leading" id="Gxm-vs-bU8"/>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LQH-DX-acc"/>
+                            <constraint firstItem="bWD-hn-0En" firstAttribute="trailing" secondItem="Hnw-j8-GiU" secondAttribute="trailing" id="MRc-vu-aai"/>
                             <constraint firstItem="20v-R7-lhj" firstAttribute="top" secondItem="zP2-wg-Ubd" secondAttribute="bottom" constant="8" symbolic="YES" id="MwZ-4P-ZeQ"/>
                             <constraint firstItem="mXG-jH-zAO" firstAttribute="top" secondItem="20v-R7-lhj" secondAttribute="bottom" constant="8" symbolic="YES" id="Odi-CK-G6l"/>
                             <constraint firstItem="JLc-tw-lNO" firstAttribute="top" secondItem="fLe-NQ-sRe" secondAttribute="bottom" constant="8" symbolic="YES" id="PIK-Hy-HOa"/>
@@ -366,6 +381,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7o-q2-Pak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1565.5999999999999" y="627.4362818590705"/>
+        </scene>
+        <!--View Controller9-->
+        <scene sceneID="hGs-d8-A9K">
+            <objects>
+                <viewController id="jJm-XP-acr" customClass="ViewController9" customModule="Number_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vmQ-oR-IyB"/>
+                        <viewControllerLayoutGuide type="bottom" id="dHF-tZ-GXY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w3E-8N-W8k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convert from Denary to Sign and Magnitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ais-rU-ETm">
+                                <rect key="frame" x="19" y="28" width="337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert number less than 128" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqZ-3W-jyS">
+                                <rect key="frame" x="81" y="57" width="213" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1SO-Vc-AW8">
+                                <rect key="frame" x="139" y="121" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Ls7-lq-UE6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkX-b8-DCu">
+                                <rect key="frame" x="132" y="173" width="110" height="30"/>
+                                <state key="normal" title="Click to Convert"/>
+                                <connections>
+                                    <action selector="ConvertNow:" destination="jJm-XP-acr" eventType="touchUpInside" id="7IC-wM-flc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rn-Iy-A1B">
+                                <rect key="frame" x="116" y="617" width="143" height="30"/>
+                                <state key="normal" title="Return to Main Menu"/>
+                                <connections>
+                                    <action selector="CloseView:" destination="jJm-XP-acr" eventType="touchUpInside" id="wkK-JM-0SF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gym-ka-nzX">
+                                <rect key="frame" x="19" y="243" width="337" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lyl-1Q-Ift"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ais-rU-ETm" firstAttribute="leading" secondItem="gym-ka-nzX" secondAttribute="leading" id="8av-VZ-Cl1"/>
+                            <constraint firstItem="gym-ka-nzX" firstAttribute="top" secondItem="IkX-b8-DCu" secondAttribute="bottom" constant="40" id="NMs-6x-yS0"/>
+                            <constraint firstItem="ais-rU-ETm" firstAttribute="trailing" secondItem="gym-ka-nzX" secondAttribute="trailing" id="O43-AW-JsJ"/>
+                            <constraint firstItem="IkX-b8-DCu" firstAttribute="centerX" secondItem="w3E-8N-W8k" secondAttribute="centerX" id="V9r-2r-ndY"/>
+                            <constraint firstAttribute="bottom" secondItem="8rn-Iy-A1B" secondAttribute="bottom" constant="20" symbolic="YES" id="j18-6q-Adj"/>
+                            <constraint firstItem="ais-rU-ETm" firstAttribute="top" secondItem="vmQ-oR-IyB" secondAttribute="bottom" constant="8" symbolic="YES" id="lkT-Iy-Uqg"/>
+                            <constraint firstItem="gym-ka-nzX" firstAttribute="centerX" secondItem="8rn-Iy-A1B" secondAttribute="centerX" id="oqd-Zj-GN7"/>
+                            <constraint firstItem="IkX-b8-DCu" firstAttribute="top" secondItem="1SO-Vc-AW8" secondAttribute="bottom" constant="22" id="qYR-Ut-Y5B"/>
+                            <constraint firstItem="1SO-Vc-AW8" firstAttribute="centerX" secondItem="IkX-b8-DCu" secondAttribute="centerX" id="ru1-hf-1p0"/>
+                            <constraint firstItem="JqZ-3W-jyS" firstAttribute="top" secondItem="ais-rU-ETm" secondAttribute="bottom" constant="8" symbolic="YES" id="vyX-Rr-jiV"/>
+                            <constraint firstItem="IkX-b8-DCu" firstAttribute="centerX" secondItem="gym-ka-nzX" secondAttribute="centerX" id="wPg-O5-6jP"/>
+                            <constraint firstItem="1SO-Vc-AW8" firstAttribute="top" secondItem="JqZ-3W-jyS" secondAttribute="bottom" constant="43" id="wh1-DZ-P1j"/>
+                            <constraint firstItem="ais-rU-ETm" firstAttribute="centerX" secondItem="JqZ-3W-jyS" secondAttribute="centerX" id="xev-UC-pqG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="InputNumber" destination="1SO-Vc-AW8" id="cid-hu-bt0"/>
+                        <outlet property="OutputNumber" destination="gym-ka-nzX" id="xNa-hV-T4n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVq-jJ-VUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.5999999999999" y="627.4362818590705"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="Q8o-N8-vcE">

@@ -42,8 +42,8 @@ class twos_complement{
             flipNumber.append(1)
         }
         // reverse back to normal binary
-        flipNumber.reverse()
         }
+        flipNumber.reverse()
         // output
     }
 }

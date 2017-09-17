@@ -20,6 +20,7 @@
 		8CFA0F651F69604A00391CFE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F641F69604A00391CFE /* ViewController2.swift */; };
 		8CFA0F671F69A78B00391CFE /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F661F69A78B00391CFE /* ViewController5.swift */; };
 		8CFA0F691F6A834700391CFE /* ViewController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F681F6A834700391CFE /* ViewController8.swift */; };
+		8CFA0F6B1F6D158400391CFE /* ViewController9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F6A1F6D158300391CFE /* ViewController9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		8CFA0F641F69604A00391CFE /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../ViewController2.swift; sourceTree = "<group>"; };
 		8CFA0F661F69A78B00391CFE /* ViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController5.swift; path = ../ViewController5.swift; sourceTree = "<group>"; };
 		8CFA0F681F6A834700391CFE /* ViewController8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController8.swift; sourceTree = "<group>"; };
+		8CFA0F6A1F6D158300391CFE /* ViewController9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				8CFA0F221F6679B000391CFE /* AppDelegate.swift */,
 				8CFA0F261F6679B000391CFE /* Main.storyboard */,
+				8CFA0F6A1F6D158300391CFE /* ViewController9.swift */,
 				8CFA0F241F6679B000391CFE /* ViewController.swift */,
 				8CFA0F641F69604A00391CFE /* ViewController2.swift */,
 				8CFA0F541F68295200391CFE /* ViewController3.swift */,
@@ -285,6 +288,7 @@
 				8CFA0F5F1F684D9500391CFE /* ViewController6.swift in Sources */,
 				8CFA0F571F682EE800391CFE /* ViewController4.swift in Sources */,
 				8CFA0F691F6A834700391CFE /* ViewController8.swift in Sources */,
+				8CFA0F6B1F6D158400391CFE /* ViewController9.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

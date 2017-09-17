@@ -8,7 +8,7 @@
 
 import UIKit
 extension String{
-    var isNumeric: Bool{
+    var isPosNumeric: Bool{
         guard self.characters.count > 0 else{return false}
         let numbers: Set<Character> = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
         return Set(self.characters).isSubset(of: numbers)
@@ -20,7 +20,7 @@ class ViewController2: UIViewController {
     @IBOutlet weak var InputNumber: UITextField!
     @IBAction func ConvertNow(_ sender: Any) {
         var NumberToOutput = String()
-        if InputNumber.text!.isNumeric == false{
+        if InputNumber.text!.isPosNumeric == false{
             let alert = UIAlertController(title: "Invalid Number", message: "You Must Input a Denary Integer", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)

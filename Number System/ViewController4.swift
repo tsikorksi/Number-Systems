@@ -17,7 +17,7 @@ class ViewController4: UIViewController {
         var NumberToConvert = Int(InputNumber.text!)
         var NumberToOutput = String()
         var re = Int()
-        if InputNumber.text!.isNumeric == false{
+        if InputNumber.text!.isPosNumeric == false{
             let alert = UIAlertController(title: "Invalid Number", message: "You Must Input a Denary Integer", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)

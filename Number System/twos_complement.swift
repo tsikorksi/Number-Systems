@@ -37,6 +37,10 @@ class twos_complement{
                 flipNumber[i] = 1
                 carry = 0
             }
+        // add 1 if carry is still 1, ie the binary was a string of 1s
+        if carry == 1{
+            flipNumber.append(1)
+        }
         // reverse back to normal binary
         flipNumber.reverse()
         }

@@ -24,44 +24,42 @@ class ViewController10: UIViewController {
             //11
             // define carry(always 1,as it 1 is added in the process)
             var carry = 1
-            //define final array
-            var finalArray = [Int]()
             //define flipped array
             var flipNumber = [Int]()
             // start flipping for loop
-            for i in inputNumber{
-                if inputNumber[i] == 0{
-                    flipNumber.append(1)
-                }
-                else {
+            var size3 = inputNumber.count
+            while size3 > 0{
+                if inputNumber[inputNumber.count-size3] == 1{
                     flipNumber.append(0)
                 }
+                else{
+                    flipNumber.append(1)
+                }
+                size3 -= 1
             }
             // reverse to allow for manipulation of array
             flipNumber.reverse()
             // begin math for loop
+            var count = 0 //incrementing counter for while loop
             // always only adding 1, so this simplifies
-            for i in flipNumber{
-                //if the value is 1, and we still have a carry
-                if flipNumber[i] == 1 && carry == 1{
-                    finalArray.append(0)
+            var size2 = flipNumber.count
+            while carry != 0 && size2 > 0{
+                if flipNumber[count] == 1{
+                    flipNumber[count] = 0
                 }
-                    //if the value is 0, and we still have a carry. This ends the process
-                else if flipNumber[i] == 0 && carry == 1{
-                    finalArray.append(0)
+                else{
+                    flipNumber[count] = 1
                     carry = 0
                 }
-                else {
-                    finalArray.append(flipNumber[i])
-                }
+                count += 1
+                size2 -= 1
             }
             // reverse back to normal binary
-            finalArray.reverse()
-            var size = finalArray.count
+            flipNumber.reverse()
+            var size = flipNumber.count
             while size > 0{
-                NumberToOutput = NumberToOutput + String(finalArray[finalArray.count - size])
+                NumberToOutput = NumberToOutput + String(flipNumber[flipNumber.count - size])
                 size -= 1
-
             }
             // output
             }

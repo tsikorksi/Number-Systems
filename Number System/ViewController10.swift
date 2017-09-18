@@ -24,6 +24,8 @@ class ViewController10: UIViewController {
             //11
             // define carry(always 1,as it 1 is added in the process)
             var carry = 1
+            //define final array
+            var finalArray = [Int]()
             //define flipped array
             var flipNumber = [Int]()
             // start flipping for loop
@@ -40,22 +42,22 @@ class ViewController10: UIViewController {
             // begin math for loop
             // always only adding 1, so this simplifies
             for i in flipNumber{
-                //if the value is 1, and we stiill have a carry
+                //if the value is 1, and we still have a carry
                 if flipNumber[i] == 1 && carry == 1{
-                    flipNumber[i] = 0
+                    finalArray.append(0)
                 }
                     //if the value is 0, and we still have a carry. This ends the process
                 else if flipNumber[i] == 0 && carry == 1{
-                    flipNumber[i] = 1
+                    finalArray.append(0)
                     carry = 0
                 }
                 else {
-                    flipNumber[i] = flipNumber[i]
+                    finalArray.append(flipNumber[i])
                 }
             }
             // reverse back to normal binary
-            flipNumber.reverse()
-            var size = flipNumber.count
+            finalArray.reverse()
+            var size = finalArray.count
             while size > 0{
                 NumberToOutput = NumberToOutput + String(flipNumber[flipNumber.count - size])
                 size -= 1

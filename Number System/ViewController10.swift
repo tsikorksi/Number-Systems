@@ -59,7 +59,7 @@ class ViewController10: UIViewController {
             finalArray.reverse()
             var size = finalArray.count
             while size > 0{
-                NumberToOutput = NumberToOutput + String(flipNumber[flipNumber.count - size])
+                NumberToOutput = NumberToOutput + String(finalArray[finalArray.count - size])
                 size -= 1
 
             }

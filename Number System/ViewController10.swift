@@ -49,7 +49,7 @@ class ViewController10: UIViewController {
                     flipNumber[i] = 1
                     carry = 0
                 }
-                else if carry == 0{
+                else {
                     flipNumber[i] = flipNumber[i]
                 }
             }

@@ -21,7 +21,6 @@ class ViewController10: UIViewController {
         }
         else{
             var inputNumber = InputNumber.text!.utf8.map{Int(($0 as UInt8)) - 48}
-            //11
             // define carry(always 1,as it 1 is added in the process)
             var carry = 1
             //define final array

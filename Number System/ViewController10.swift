@@ -1,5 +1,3 @@
-    //
-    //
     // Created by Tadeusz Sikorski 17/09/17
     //
     // Given input of binary

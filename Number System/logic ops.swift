@@ -12,6 +12,7 @@ class ViewController12: UIViewController {
     @IBOutlet weak var input_two: UITextField!
 // ui object to choose flag
     @IBAction func AddNow(_ sender: Any) {
+        //output wierdness? how are we inputting ??
         var output = String("")
         if input_one.text!.isBinaryNumber == false{
             let alert = UIAlertController(title: "One or More Invalid Numbers", message: "You Must Input two Binary Integers", preferredStyle: UIAlertControllerStyle.alert)

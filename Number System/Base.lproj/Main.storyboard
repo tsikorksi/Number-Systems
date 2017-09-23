@@ -110,10 +110,10 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWt-2j-iTK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWt-2j-iTK">
                                 <rect key="frame" x="113" y="28" width="149" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20v-R7-lhj">
@@ -201,9 +201,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ4-pz-TS4">
-                                <rect key="frame" x="16" y="344" width="343" height="30"/>
+                                <rect key="frame" x="16" y="344" width="343" height="26"/>
                                 <color key="backgroundColor" red="1" green="0.067626303659999998" blue="0.0055676646550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Convert Binary to Two's Compliment">
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Convert Binary to It's negative equivalent in Two's Compliment">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -212,8 +213,20 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phz-gN-oHG">
+                                <rect key="frame" x="16" y="378" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.32315610569999997" blue="0.93688050379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Convert to Fixed Point(WIP)">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GoQ-pP-TmO" kind="popoverPresentation" popoverAnchorView="Phz-gN-oHG" id="xE3-4a-TLY">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.80433451172269987" green="0.83990446891191706" blue="0.52698641984144468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="tintColor" red="0.83990446891191706" green="0.69739047592065218" blue="0.72236604078326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="centerX" secondItem="PWt-2j-iTK" secondAttribute="centerX" id="0B6-Ye-KUz"/>
@@ -224,6 +237,7 @@
                             <constraint firstItem="LZ4-pz-TS4" firstAttribute="leading" secondItem="bWD-hn-0En" secondAttribute="leading" id="7CP-ic-rDQ"/>
                             <constraint firstItem="bWD-hn-0En" firstAttribute="top" secondItem="Hnw-j8-GiU" secondAttribute="bottom" constant="8" symbolic="YES" id="80m-lI-wP8"/>
                             <constraint firstItem="fLe-NQ-sRe" firstAttribute="leading" secondItem="JLc-tw-lNO" secondAttribute="leading" id="84D-Pj-wyu"/>
+                            <constraint firstItem="Phz-gN-oHG" firstAttribute="top" secondItem="LZ4-pz-TS4" secondAttribute="bottom" constant="8" symbolic="YES" id="Bbk-dG-naD"/>
                             <constraint firstItem="mXG-jH-zAO" firstAttribute="trailing" secondItem="fLe-NQ-sRe" secondAttribute="trailing" id="Bs9-pN-dCh"/>
                             <constraint firstItem="LZ4-pz-TS4" firstAttribute="top" secondItem="bWD-hn-0En" secondAttribute="bottom" constant="8" symbolic="YES" id="Ewu-a5-R6a"/>
                             <constraint firstItem="bWD-hn-0En" firstAttribute="leading" secondItem="Hnw-j8-GiU" secondAttribute="leading" id="Gxm-vs-bU8"/>
@@ -243,13 +257,84 @@
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="top" secondItem="PWt-2j-iTK" secondAttribute="bottom" constant="19" id="nbJ-1M-pd5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JLc-tw-lNO" secondAttribute="bottom" constant="407" id="pbq-N8-G8r"/>
                             <constraint firstItem="Hnw-j8-GiU" firstAttribute="trailing" secondItem="JLc-tw-lNO" secondAttribute="trailing" id="qBE-fN-p0L"/>
+                            <constraint firstItem="Phz-gN-oHG" firstAttribute="trailing" secondItem="LZ4-pz-TS4" secondAttribute="trailing" id="wYy-vA-P68"/>
                             <constraint firstItem="PWt-2j-iTK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="zCy-dT-i9t"/>
+                            <constraint firstItem="Phz-gN-oHG" firstAttribute="leading" secondItem="LZ4-pz-TS4" secondAttribute="leading" id="zbF-wY-3yO"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="72.799999999999997" y="-105.69715142428787"/>
+        </scene>
+        <!--View Controller11-->
+        <scene sceneID="sWR-yE-yXt">
+            <objects>
+                <viewController id="GoQ-pP-TmO" customClass="ViewController11" customModule="Number_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SH6-Yb-dDA"/>
+                        <viewControllerLayoutGuide type="bottom" id="0oz-oq-BpR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oTL-v1-k4B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convert Decimal To Fixed Point" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2C-Nv-R2F">
+                                <rect key="frame" x="68" y="28" width="239" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C50-3F-jJm">
+                                <rect key="frame" x="58" y="94" width="259" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYH-dv-hFS">
+                                <rect key="frame" x="116" y="617" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return to Main Menu"/>
+                                <connections>
+                                    <action selector="CloseView:" destination="GoQ-pP-TmO" eventType="touchUpInside" id="Xju-Jx-vfo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJH-Xz-uw5">
+                                <rect key="frame" x="16" y="227" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzA-8a-7Ni">
+                                <rect key="frame" x="132" y="159" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click to Convert"/>
+                                <connections>
+                                    <action selector="ConvertNow:" destination="GoQ-pP-TmO" eventType="touchUpInside" id="PVa-Nu-6qu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-Kk-ati">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="InputNumber" destination="C50-3F-jJm" id="1hg-u1-DeI"/>
+                        <outlet property="OutputNumber" destination="MJH-Xz-uw5" id="KVh-85-T7D"/>
+                        <outlet property="OutputText" destination="wvQ-Kk-ati" id="rWJ-bu-vdB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIA-Ew-bed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727.20000000000005" y="627.4362818590705"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="d4T-rr-5Dl">

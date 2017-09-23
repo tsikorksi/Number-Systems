@@ -22,6 +22,7 @@
 		8CFA0F691F6A834700391CFE /* ViewController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F681F6A834700391CFE /* ViewController8.swift */; };
 		8CFA0F6B1F6D158400391CFE /* ViewController9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F6A1F6D158300391CFE /* ViewController9.swift */; };
 		8CFA0F6D1F6E788200391CFE /* ViewController10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F6C1F6E788200391CFE /* ViewController10.swift */; };
+		C587DC2A6A3209973DB1D93E /* logic ops.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587DB67DCB38B03140624FC /* logic ops.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		8CFA0F681F6A834700391CFE /* ViewController8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController8.swift; sourceTree = "<group>"; };
 		8CFA0F6A1F6D158300391CFE /* ViewController9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController9.swift; sourceTree = "<group>"; };
 		8CFA0F6C1F6E788200391CFE /* ViewController10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController10.swift; sourceTree = "<group>"; };
+		C587DB67DCB38B03140624FC /* logic ops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "logic ops.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				8CFA0F291F6679B000391CFE /* Assets.xcassets */,
 				8CFA0F2B1F6679B000391CFE /* LaunchScreen.storyboard */,
 				8CFA0F2E1F6679B000391CFE /* Info.plist */,
+				C587DB67DCB38B03140624FC /* logic ops.swift */,
 			);
 			path = "Number System";
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				8CFA0F571F682EE800391CFE /* ViewController4.swift in Sources */,
 				8CFA0F691F6A834700391CFE /* ViewController8.swift in Sources */,
 				8CFA0F6B1F6D158400391CFE /* ViewController9.swift in Sources */,
+				C587DC2A6A3209973DB1D93E /* logic ops.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

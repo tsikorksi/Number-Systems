@@ -47,11 +47,11 @@ class ViewController11: UIViewController {
             }
             var size = count
             var IntegerArray = [Character]()
-            while size >= 0{
+            while size > 0{
                 IntegerArray.append(GENERICARRAY1[count - size])
                 size -= 1
             }
-            var IntegerString = String(IntegerArray)
+            let IntegerString = String(IntegerArray)
             //IntegerString Is Integer Side of Number
             pointreached = false
             count = 1
@@ -64,19 +64,14 @@ class ViewController11: UIViewController {
                 }
             }
             var DecimalArray = [Character]()
-            var size2 = count
+            var size2 = count - 1
             while size2 > 0{
                 DecimalArray.append(GENERICARRAY1[GENERICARRAY1.count - size2])
                 size2 -= 1
             }
-            var DecimalString = String(DecimalArray)
+            
             //DecimalString is Decimal side of Number
-            if Int(IntegerString)! > 255{
-                let alert = UIAlertController(title: "Invalid Number", message: "You Must Input a Denary Number With a Decimal Point Less than 256", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
-            else{
+            
                 var re = Int()
                 var binaryArray = [Int]()
                 var NumberToConvert = Int(IntegerString)
@@ -87,28 +82,43 @@ class ViewController11: UIViewController {
                 }
                 binaryArray.reverse()
                 //Integer Side Converted to Binary Array
-                if binaryArray.count == 8{
-                    OutputText.text = "There is No Point"
-                }
-                else{
-                    OutputText.text = "The Point is between position" + "\(binaryArray.count)" + "and position" + "\(binaryArray.count + 1)"
-                }
-                if binaryArray.count < 8{
-                    count = 8 - binaryArray.count
-                    let num = DecimalArray[0]
-                        if num == "0" || num == "1" || num == "2" || num == "3" || num == "4"{
-                            binaryArray.append(0)
-                        }
-                        else{
-                            binaryArray.append(1)
-                        }
-                    count -= 1
-                    if count > 0{
-                        
+                OutputText.text = "The Point is between position " + "\(binaryArray.count)" + " and position " + "\(binaryArray.count + 1)"
+                count = 0
+                if DecimalArray.count < 6{
+                    while DecimalArray.count < 6{
+                        DecimalArray.append("0")
                     }
                 }
+                let DecimalString = String(DecimalArray)
+                var InttoStart = 5 * Int(pow(Double(10), Double(DecimalArray.count-1)))
+                var DecimalInt = Int(DecimalString)
+                while count < 16 && DecimalInt! != 0{
+                    count += 1
+                    if DecimalInt! - InttoStart >= 0{
+                        DecimalInt = DecimalInt! - InttoStart
+                        binaryArray.append(1)
+                    }
+                    else{
+                        binaryArray.append(0)
+                    }
+                    InttoStart = InttoStart / 2
+                }
+                count = 1
+            while count < 16{
+                if binaryArray[binaryArray.count-1] == 0{
+                    binaryArray.remove(at: binaryArray.count-1)
+                }
+                count += 1
+                
             }
+            var size3 = binaryArray.count
+            while size3 > 0{
+                NumberToOutput = NumberToOutput + "\(binaryArray[binaryArray.count-size3])"
+                size3 -= 1
+            }
+            
         }
+        OutputNumber.text = NumberToOutput
     }
     
     @IBAction func CloseView(_ sender: Any) {

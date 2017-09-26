@@ -1,0 +1,11 @@
+Denary --> Binary Floating point
+convert value to fixed point
+shift value left or right so that the first 1 is after a point
+the value shifted is the exponent, right is negative ( so you add or minus from 0) - this happens when user inputs  a decimal
+if the original denary is negative, twos complement the mantissa you get
+
+Binary --> Denary
+shift point right or left depending on exponent(account for negative or positive)
+if original value began with a 1, twos complemnt the result
+convert from fixed point to denary
+add on a - if it was a -

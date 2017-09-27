@@ -1,5 +1,5 @@
     // Created by Tadeusz Sikorski 17/09/17
-    //fixed by Anthony Ford
+    //integrated by Anthony Ford
     // Given input of binary
     // Convert to negative binary and back(it is the sane process)
     

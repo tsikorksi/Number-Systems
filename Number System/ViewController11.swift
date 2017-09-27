@@ -84,15 +84,16 @@ class ViewController11: UIViewController {
                 //Integer Side Converted to Binary Array
                 OutputText.text = "The Point is between position " + "\(binaryArray.count)" + " and position " + "\(binaryArray.count + 1)"
                 count = 0
-                if DecimalArray.count < 6{
-                    while DecimalArray.count < 6{
+                if DecimalArray.count < 8{
+                    while DecimalArray.count < 8{
                         DecimalArray.append("0")
                     }
                 }
+                count = binaryArray.count
                 let DecimalString = String(DecimalArray)
                 var InttoStart = 5 * Int(pow(Double(10), Double(DecimalArray.count-1)))
                 var DecimalInt = Int(DecimalString)
-                while count < 16 && DecimalInt! != 0{
+                while count < 32 && DecimalInt! != 0{
                     count += 1
                     if DecimalInt! - InttoStart >= 0{
                         DecimalInt = DecimalInt! - InttoStart
@@ -104,13 +105,6 @@ class ViewController11: UIViewController {
                     InttoStart = InttoStart / 2
                 }
                 count = 1
-            while count < 16{
-                if binaryArray[binaryArray.count-1] == 0{
-                    binaryArray.remove(at: binaryArray.count-1)
-                }
-                count += 1
-                
-            }
             var size3 = binaryArray.count
             while size3 > 0{
                 NumberToOutput = NumberToOutput + "\(binaryArray[binaryArray.count-size3])"

@@ -10,6 +10,7 @@
 		8C3C435F1F79857D00A894E0 /* LogicOpsFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3C435E1F79857D00A894E0 /* LogicOpsFinal.swift */; };
 		8CA1BFD01F7A7241000A0883 /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1BFCF1F7A7241000A0883 /* FloatingPoint.swift */; };
 		8CA1BFD21F7A77F7000A0883 /* FixedtoDenary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1BFD11F7A77F7000A0883 /* FixedtoDenary.swift */; };
+		8CA1BFD41F7D747E000A0883 /* DenToFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1BFD31F7D747E000A0883 /* DenToFloat.swift */; };
 		8CFA0F231F6679B000391CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F221F6679B000391CFE /* AppDelegate.swift */; };
 		8CFA0F251F6679B000391CFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F241F6679B000391CFE /* ViewController.swift */; };
 		8CFA0F281F6679B000391CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFA0F261F6679B000391CFE /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		8C3C435E1F79857D00A894E0 /* LogicOpsFinal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicOpsFinal.swift; sourceTree = "<group>"; };
 		8CA1BFCF1F7A7241000A0883 /* FloatingPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPoint.swift; sourceTree = "<group>"; };
 		8CA1BFD11F7A77F7000A0883 /* FixedtoDenary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedtoDenary.swift; sourceTree = "<group>"; };
+		8CA1BFD31F7D747E000A0883 /* DenToFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenToFloat.swift; sourceTree = "<group>"; };
 		8CFA0F1F1F6679B000391CFE /* Number System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFA0F221F6679B000391CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CFA0F241F6679B000391CFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				8CFA0F221F6679B000391CFE /* AppDelegate.swift */,
 				8CFA0F261F6679B000391CFE /* Main.storyboard */,
+				8CA1BFD31F7D747E000A0883 /* DenToFloat.swift */,
 				8CA1BFCF1F7A7241000A0883 /* FloatingPoint.swift */,
 				8CA1BFD11F7A77F7000A0883 /* FixedtoDenary.swift */,
 				8C3C435E1F79857D00A894E0 /* LogicOpsFinal.swift */,
@@ -306,6 +309,7 @@
 				8CA1BFD21F7A77F7000A0883 /* FixedtoDenary.swift in Sources */,
 				8CFA0F571F682EE800391CFE /* ViewController4.swift in Sources */,
 				8CFA0F691F6A834700391CFE /* ViewController8.swift in Sources */,
+				8CA1BFD41F7D747E000A0883 /* DenToFloat.swift in Sources */,
 				8CFA0F6F1F71336D00391CFE /* ViewController11.swift in Sources */,
 				8CFA0F6B1F6D158400391CFE /* ViewController9.swift in Sources */,
 				8CA1BFD01F7A7241000A0883 /* FloatingPoint.swift in Sources */,

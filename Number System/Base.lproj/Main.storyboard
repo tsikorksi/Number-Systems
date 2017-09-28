@@ -83,6 +83,117 @@
             </objects>
             <point key="canvasLocation" x="-727.20000000000005" y="-106.59670164917542"/>
         </scene>
+        <!--Den To Float-->
+        <scene sceneID="XtY-9M-Jhi">
+            <objects>
+                <viewController id="H2t-MN-u6R" customClass="DenToFloat" customModule="Number_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fWw-Z3-RBd"/>
+                        <viewControllerLayoutGuide type="bottom" id="qi7-Pt-hS5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jtB-xC-K1J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqV-hj-5Tg">
+                                <rect key="frame" x="116" y="617" width="143" height="30"/>
+                                <state key="normal" title="Return to Main Menu"/>
+                                <connections>
+                                    <action selector="CloseView:" destination="H2t-MN-u6R" eventType="touchUpInside" id="Nzv-F0-czU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convert Denary to Normalised Floating Point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzs-EI-3Jg">
+                                <rect key="frame" x="16" y="28" width="341" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfb-5c-OGo">
+                                <rect key="frame" x="16" y="104" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Denary Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHI-0d-FOH">
+                                <rect key="frame" x="102" y="75" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsj-8I-T56">
+                                <rect key="frame" x="132" y="176" width="110" height="30"/>
+                                <state key="normal" title="Click to Convert"/>
+                                <connections>
+                                    <action selector="ConvertNow:" destination="H2t-MN-u6R" eventType="touchUpInside" id="jwM-KH-3mz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anY-Oj-Kyf">
+                                <rect key="frame" x="16" y="256" width="341" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DQe-E6-p0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output Mantissa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujm-tw-VR8">
+                                <rect key="frame" x="124" y="227" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output Exponent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2O-bv-Y0b">
+                                <rect key="frame" x="122" y="308" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdU-PN-i4I">
+                                <rect key="frame" x="16" y="344" width="341" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="BxI-OE-Ndx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dsj-8I-T56" firstAttribute="top" secondItem="tfb-5c-OGo" secondAttribute="bottom" constant="42" id="7CH-Ea-amx"/>
+                            <constraint firstItem="tfb-5c-OGo" firstAttribute="top" secondItem="qHI-0d-FOH" secondAttribute="bottom" constant="8" symbolic="YES" id="7iu-Jz-ZaM"/>
+                            <constraint firstItem="tfb-5c-OGo" firstAttribute="trailing" secondItem="jtB-xC-K1J" secondAttribute="trailingMargin" id="7l2-43-aG5"/>
+                            <constraint firstItem="tfb-5c-OGo" firstAttribute="leading" secondItem="anY-Oj-Kyf" secondAttribute="leading" id="9fT-Zx-cgo"/>
+                            <constraint firstAttribute="bottom" secondItem="fqV-hj-5Tg" secondAttribute="bottom" constant="20" symbolic="YES" id="Kxf-fV-y3X"/>
+                            <constraint firstItem="anY-Oj-Kyf" firstAttribute="top" secondItem="Ujm-tw-VR8" secondAttribute="bottom" constant="8" symbolic="YES" id="Nrc-BQ-HMC"/>
+                            <constraint firstItem="Ujm-tw-VR8" firstAttribute="top" secondItem="dsj-8I-T56" secondAttribute="bottom" constant="21" id="Qw4-0h-ZVd"/>
+                            <constraint firstItem="dsj-8I-T56" firstAttribute="centerX" secondItem="anY-Oj-Kyf" secondAttribute="centerX" id="RDh-en-jWU"/>
+                            <constraint firstItem="uzs-EI-3Jg" firstAttribute="trailing" secondItem="anY-Oj-Kyf" secondAttribute="trailing" id="WbV-Va-xbN"/>
+                            <constraint firstItem="uzs-EI-3Jg" firstAttribute="leading" secondItem="tfb-5c-OGo" secondAttribute="leading" id="Wxp-gd-T18"/>
+                            <constraint firstItem="dsj-8I-T56" firstAttribute="centerX" secondItem="Ujm-tw-VR8" secondAttribute="centerX" id="aVL-dn-xkG"/>
+                            <constraint firstItem="qHI-0d-FOH" firstAttribute="top" secondItem="uzs-EI-3Jg" secondAttribute="bottom" constant="26" id="bcc-wZ-5Mk"/>
+                            <constraint firstItem="VdU-PN-i4I" firstAttribute="top" secondItem="R2O-bv-Y0b" secondAttribute="bottom" constant="15" id="in8-XD-RY6"/>
+                            <constraint firstItem="uzs-EI-3Jg" firstAttribute="leading" secondItem="jtB-xC-K1J" secondAttribute="leadingMargin" id="lTY-oa-tAK"/>
+                            <constraint firstItem="qHI-0d-FOH" firstAttribute="centerX" secondItem="tfb-5c-OGo" secondAttribute="centerX" id="nel-X4-2QT"/>
+                            <constraint firstItem="uzs-EI-3Jg" firstAttribute="centerX" secondItem="qHI-0d-FOH" secondAttribute="centerX" id="o0A-d0-8vY"/>
+                            <constraint firstItem="R2O-bv-Y0b" firstAttribute="centerX" secondItem="VdU-PN-i4I" secondAttribute="centerX" id="pPs-zr-WUF"/>
+                            <constraint firstItem="R2O-bv-Y0b" firstAttribute="top" secondItem="anY-Oj-Kyf" secondAttribute="bottom" constant="31" id="trs-Vr-2zZ"/>
+                            <constraint firstItem="anY-Oj-Kyf" firstAttribute="leading" secondItem="VdU-PN-i4I" secondAttribute="leading" id="ucc-Kr-pyR"/>
+                            <constraint firstItem="anY-Oj-Kyf" firstAttribute="trailing" secondItem="VdU-PN-i4I" secondAttribute="trailing" id="vcW-LZ-BeT"/>
+                            <constraint firstItem="uzs-EI-3Jg" firstAttribute="top" secondItem="fWw-Z3-RBd" secondAttribute="bottom" constant="8" symbolic="YES" id="wNb-A5-9B8"/>
+                            <constraint firstItem="R2O-bv-Y0b" firstAttribute="centerX" secondItem="fqV-hj-5Tg" secondAttribute="centerX" id="xWu-mm-gsu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="InputNumber" destination="tfb-5c-OGo" id="Kat-Zd-ZdF"/>
+                        <outlet property="OutputExponent" destination="VdU-PN-i4I" id="qY5-KW-PfR"/>
+                        <outlet property="OutputMantissa" destination="anY-Oj-Kyf" id="FcG-2O-XGT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWJ-1p-Sql" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1415" y="-922"/>
+        </scene>
         <!--Floating Point-->
         <scene sceneID="g71-Wg-GCV">
             <objects>
@@ -492,6 +603,18 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zd-rl-pml">
+                                <rect key="frame" x="16" y="530" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.21499892440000001" green="0.83990446890000003" blue="0.82335615689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Denary to Normalised Floating Point">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="H2t-MN-u6R" kind="popoverPresentation" popoverAnchorView="5Zd-rl-pml" id="Wmw-Ue-4I5">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="tintColor" red="0.83990446891191706" green="0.69739047592065218" blue="0.72236604078326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -507,12 +630,14 @@
                             <constraint firstItem="U2T-qH-mhX" firstAttribute="trailing" secondItem="Phz-gN-oHG" secondAttribute="trailing" id="7dM-9Z-dRD"/>
                             <constraint firstItem="bWD-hn-0En" firstAttribute="top" secondItem="Hnw-j8-GiU" secondAttribute="bottom" constant="8" symbolic="YES" id="80m-lI-wP8"/>
                             <constraint firstItem="fLe-NQ-sRe" firstAttribute="leading" secondItem="JLc-tw-lNO" secondAttribute="leading" id="84D-Pj-wyu"/>
+                            <constraint firstItem="5Zd-rl-pml" firstAttribute="leading" secondItem="4u9-WR-3fW" secondAttribute="leading" id="8gs-u5-fk3"/>
                             <constraint firstItem="Phz-gN-oHG" firstAttribute="top" secondItem="LZ4-pz-TS4" secondAttribute="bottom" constant="8" symbolic="YES" id="Bbk-dG-naD"/>
                             <constraint firstItem="mXG-jH-zAO" firstAttribute="trailing" secondItem="fLe-NQ-sRe" secondAttribute="trailing" id="Bs9-pN-dCh"/>
                             <constraint firstItem="4u9-WR-3fW" firstAttribute="leading" secondItem="b60-Fy-79p" secondAttribute="leading" id="CNq-QG-DcR"/>
                             <constraint firstItem="LZ4-pz-TS4" firstAttribute="top" secondItem="bWD-hn-0En" secondAttribute="bottom" constant="8" symbolic="YES" id="Ewu-a5-R6a"/>
                             <constraint firstItem="4u9-WR-3fW" firstAttribute="top" secondItem="b60-Fy-79p" secondAttribute="bottom" constant="8" symbolic="YES" id="GIP-gP-Aht"/>
                             <constraint firstItem="bWD-hn-0En" firstAttribute="leading" secondItem="Hnw-j8-GiU" secondAttribute="leading" id="Gxm-vs-bU8"/>
+                            <constraint firstItem="5Zd-rl-pml" firstAttribute="top" secondItem="4u9-WR-3fW" secondAttribute="bottom" constant="8" symbolic="YES" id="IUw-ps-RMs"/>
                             <constraint firstItem="4u9-WR-3fW" firstAttribute="trailing" secondItem="b60-Fy-79p" secondAttribute="trailing" id="LM7-mn-zNO"/>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LQH-DX-acc"/>
                             <constraint firstItem="LZ4-pz-TS4" firstAttribute="trailing" secondItem="bWD-hn-0En" secondAttribute="trailing" id="M9B-Yd-tMd"/>
@@ -523,6 +648,7 @@
                             <constraint firstItem="Hnw-j8-GiU" firstAttribute="leading" secondItem="JLc-tw-lNO" secondAttribute="leading" id="TPh-Gw-eob"/>
                             <constraint firstItem="b60-Fy-79p" firstAttribute="trailing" secondItem="U2T-qH-mhX" secondAttribute="trailing" id="UQ9-av-2wp"/>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="leading" secondItem="20v-R7-lhj" secondAttribute="leading" id="Vav-7K-ZWi"/>
+                            <constraint firstItem="5Zd-rl-pml" firstAttribute="trailing" secondItem="4u9-WR-3fW" secondAttribute="trailing" id="Vxh-sP-6fp"/>
                             <constraint firstItem="PWt-2j-iTK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="a03-ZE-nsF"/>
                             <constraint firstItem="b60-Fy-79p" firstAttribute="top" secondItem="U2T-qH-mhX" secondAttribute="bottom" constant="8" symbolic="YES" id="bvV-ed-vFp"/>
                             <constraint firstItem="fLe-NQ-sRe" firstAttribute="trailing" secondItem="JLc-tw-lNO" secondAttribute="trailing" id="cRJ-t5-E9f"/>

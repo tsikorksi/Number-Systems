@@ -457,6 +457,19 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u9-WR-3fW">
+                                <rect key="frame" x="16" y="492" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83926455124597044" green="0.83990446890000003" blue="0.18769444633041779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Floating Point to Denary">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EWZ-a7-7au" kind="popoverPresentation" popoverAnchorView="4u9-WR-3fW" id="e7v-Bv-WRF">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="tintColor" red="0.83990446891191706" green="0.69739047592065218" blue="0.72236604078326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

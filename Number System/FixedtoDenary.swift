@@ -39,13 +39,16 @@ class FixedtoDenary: UIViewController {
         else{
             let     num = Int(Input2.text!)!
             var Array1 = Array(Input1.text!.characters)
+            
             var Array2 = [Character]()
+            
             for _ in 1...num{
                 Array2.append(Array1[0])
                 Array1.remove(at: 0)
             }
+            
             var theNumber = String(Array2)
-          
+            
             
             var BinaryCharacterValue: Int = Int(pow(Double(2), Double(theNumber.characters.count-1)))
             for character in theNumber.characters{

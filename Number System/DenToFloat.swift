@@ -2,7 +2,7 @@
 //  DenToFloat.swift
 //  Number System
 //
-//  Created by Anthony Ford on 28/09/2017.
+//  Created by Anthony Ford and Tadeusz Sikorski on 28/09/2017.
 //  Copyright © 2017 Anthony Ford. All rights reserved.
 //
 

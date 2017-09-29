@@ -27,6 +27,7 @@
 		8CFA0F6B1F6D158400391CFE /* ViewController9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F6A1F6D158300391CFE /* ViewController9.swift */; };
 		8CFA0F6D1F6E788200391CFE /* ViewController10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F6C1F6E788200391CFE /* ViewController10.swift */; };
 		8CFA0F6F1F71336D00391CFE /* ViewController11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA0F6E1F71336D00391CFE /* ViewController11.swift */; };
+		C587D12B4ECCA2AAADD340EB /* how to floaing.txt in Resources */ = {isa = PBXBuildFile; fileRef = C587D53022BD1A5D931F539C /* how to floaing.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		8CFA0F6A1F6D158300391CFE /* ViewController9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController9.swift; sourceTree = "<group>"; };
 		8CFA0F6C1F6E788200391CFE /* ViewController10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController10.swift; sourceTree = "<group>"; };
 		8CFA0F6E1F71336D00391CFE /* ViewController11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController11.swift; sourceTree = "<group>"; };
+		C587D53022BD1A5D931F539C /* how to floaing.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "how to floaing.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				8CFA0F291F6679B000391CFE /* Assets.xcassets */,
 				8CFA0F2B1F6679B000391CFE /* LaunchScreen.storyboard */,
 				8CFA0F2E1F6679B000391CFE /* Info.plist */,
+				C587D53022BD1A5D931F539C /* how to floaing.txt */,
 			);
 			path = "Number System";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				8CFA0F2D1F6679B000391CFE /* LaunchScreen.storyboard in Resources */,
 				8CFA0F2A1F6679B000391CFE /* Assets.xcassets in Resources */,
 				8CFA0F281F6679B000391CFE /* Main.storyboard in Resources */,
+				C587D12B4ECCA2AAADD340EB /* how to floaing.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

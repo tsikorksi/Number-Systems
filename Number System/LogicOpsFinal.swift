@@ -3,7 +3,8 @@
 //  Number System
 //  Created by Tadeusz Sikorski
 //  Integrated by Anthony Ford on 19/09/2017.
-//  Copyright © 2017 Anthony Ford and Tadeusz Sikorski. All rights reserved.
+//
+Copyright © 2017 Anthony Ford and Tadeusz Sikorski. All rights reserved.
 //
 
 import UIKit

@@ -68,6 +68,7 @@ class Normalisation: UIViewController {
             
         }
         OutputM.text = OutputMantissa
+        OutputE.text = OutputExponent
     }
     override func viewDidLoad() {
         super.viewDidLoad()

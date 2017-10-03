@@ -14,7 +14,6 @@ extension String{
         return Set(self.characters).isSubset(of: numbers)
     }
 }
-
 class DenToFloat: UIViewController {
     @IBOutlet weak var InputNumber: UITextField!
     @IBOutlet weak var OutputExponent: UILabel!
@@ -68,9 +67,7 @@ class DenToFloat: UIViewController {
                 DecimalArray.append(GENERICARRAY1[GENERICARRAY1.count - size2])
                 size2 -= 1
             }
-            
             //DecimalString is Decimal side of Number
-            
             var re = Int()
             var binaryArray = [Int]()
             var NumberToConvert = Int(IntegerString)
@@ -143,7 +140,6 @@ class DenToFloat: UIViewController {
                         binaryArray2[i-1] = 1
                     }
                 }
-                
                 count = 1
                 while carry != 0{
                     if binaryArray2[binaryArray2.count - count] == 1{
@@ -186,13 +182,9 @@ class DenToFloat: UIViewController {
                 NumberToOutput = NumberToOutput + String(binaryArray[binaryArray.count-size3])
                 size3 -= 1
             }
-            
-            
         }
     OutputExponent.text = ExNumberToOutput
     OutputMantissa.text = NumberToOutput
-        
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

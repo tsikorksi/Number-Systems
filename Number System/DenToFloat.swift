@@ -23,7 +23,9 @@ class DenToFloat: UIViewController {
         var ExNumberToOutput = ""
         var NumberToOutput = ""
         if InputNumber.text!.isPosNegDecNumeric == false{
-            
+            let alert = UIAlertController(title: "Invalid Number", message: "You Must Input a Denary Number", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
         else{
             var GENERICARRAY1 = Array(InputNumber.text!.characters)

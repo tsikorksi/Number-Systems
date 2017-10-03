@@ -543,7 +543,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP2-wg-Ubd">
-                                <rect key="frame" x="16" y="78" width="343" height="30"/>
+                                <rect key="frame" x="16" y="59" width="343" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.06762630366413791" blue="0.0055676646551029441" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="byk-FL-bBB"/>
@@ -557,14 +557,8 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWt-2j-iTK">
-                                <rect key="frame" x="113" y="28" width="149" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20v-R7-lhj">
-                                <rect key="frame" x="16" y="116" width="343" height="30"/>
+                                <rect key="frame" x="16" y="97" width="343" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.32315610571005127" blue="0.93688050382637478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bsk-gI-DE6"/>
@@ -579,7 +573,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXG-jH-zAO">
-                                <rect key="frame" x="16" y="154" width="343" height="30"/>
+                                <rect key="frame" x="16" y="135" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.065495032826470387" green="0.64443005181347157" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="djg-UK-j5w"/>
@@ -594,7 +588,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-NQ-sRe">
-                                <rect key="frame" x="16" y="192" width="343" height="30"/>
+                                <rect key="frame" x="16" y="173" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.23551855564789959" green="0.21342686268354763" blue="0.84326424870466321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kaz-Vm-uNI"/>
@@ -609,7 +603,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLc-tw-lNO">
-                                <rect key="frame" x="16" y="230" width="343" height="30"/>
+                                <rect key="frame" x="16" y="211" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.84326424870466321" green="0.82539900494993446" blue="0.081580977780742511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="A0P-hw-vOl"/>
@@ -624,7 +618,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnw-j8-GiU">
-                                <rect key="frame" x="16" y="268" width="343" height="30"/>
+                                <rect key="frame" x="16" y="249" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.21499892441695984" green="0.83990446891191706" blue="0.82335615693755704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Binary Addition">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -636,7 +630,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWD-hn-0En">
-                                <rect key="frame" x="16" y="306" width="343" height="30"/>
+                                <rect key="frame" x="16" y="287" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.32021334991407363" green="0.83990446891191706" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Convert Base 10 to Sign and Magnitude Base 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -648,7 +642,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ4-pz-TS4">
-                                <rect key="frame" x="16" y="344" width="343" height="26"/>
+                                <rect key="frame" x="16" y="325" width="343" height="26"/>
                                 <color key="backgroundColor" red="1" green="0.067626303659999998" blue="0.0055676646550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Convert Binary to It's negative equivalent in Two's Compliment">
@@ -661,7 +655,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phz-gN-oHG">
-                                <rect key="frame" x="16" y="378" width="343" height="30"/>
+                                <rect key="frame" x="16" y="359" width="343" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.32315610569999997" blue="0.93688050379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Convert to Fixed Point">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -673,7 +667,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2T-qH-mhX">
-                                <rect key="frame" x="16" y="416" width="343" height="30"/>
+                                <rect key="frame" x="16" y="397" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.065495032829999994" green="0.64443005180000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Simple Logic Operations">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -685,7 +679,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b60-Fy-79p">
-                                <rect key="frame" x="16" y="454" width="343" height="30"/>
+                                <rect key="frame" x="16" y="435" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.23551855560000001" green="0.2134268627" blue="0.84326424870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Convert From Fixed Point">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -697,7 +691,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u9-WR-3fW">
-                                <rect key="frame" x="16" y="492" width="343" height="30"/>
+                                <rect key="frame" x="16" y="473" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.83926455124597044" green="0.83990446890000003" blue="0.18769444633041779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Floating Point to Denary">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -709,7 +703,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zd-rl-pml">
-                                <rect key="frame" x="16" y="530" width="343" height="30"/>
+                                <rect key="frame" x="16" y="511" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.21499892440000001" green="0.83990446890000003" blue="0.82335615689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Denary to Normalised Floating Point">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -721,7 +715,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HX-bN-G9e">
-                                <rect key="frame" x="16" y="568" width="343" height="30"/>
+                                <rect key="frame" x="16" y="549" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.3202133499" green="0.83990446890000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Normalise Floating Point">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -732,6 +726,12 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWt-2j-iTK">
+                                <rect key="frame" x="113" y="20" width="149" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="tintColor" red="0.83990446891191706" green="0.69739047592065218" blue="0.72236604078326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -768,15 +768,15 @@
                             <constraint firstItem="b60-Fy-79p" firstAttribute="trailing" secondItem="U2T-qH-mhX" secondAttribute="trailing" id="UQ9-av-2wp"/>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="leading" secondItem="20v-R7-lhj" secondAttribute="leading" id="Vav-7K-ZWi"/>
                             <constraint firstItem="5Zd-rl-pml" firstAttribute="trailing" secondItem="4u9-WR-3fW" secondAttribute="trailing" id="Vxh-sP-6fp"/>
-                            <constraint firstItem="PWt-2j-iTK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="a03-ZE-nsF"/>
+                            <constraint firstItem="PWt-2j-iTK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a03-ZE-nsF"/>
                             <constraint firstItem="b60-Fy-79p" firstAttribute="top" secondItem="U2T-qH-mhX" secondAttribute="bottom" constant="8" symbolic="YES" id="bvV-ed-vFp"/>
                             <constraint firstItem="fLe-NQ-sRe" firstAttribute="trailing" secondItem="JLc-tw-lNO" secondAttribute="trailing" id="cRJ-t5-E9f"/>
                             <constraint firstItem="U2T-qH-mhX" firstAttribute="top" secondItem="Phz-gN-oHG" secondAttribute="bottom" constant="8" symbolic="YES" id="dzh-KB-Qje"/>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="trailing" secondItem="20v-R7-lhj" secondAttribute="trailing" id="in2-Un-XZK"/>
                             <constraint firstItem="fLe-NQ-sRe" firstAttribute="top" secondItem="mXG-jH-zAO" secondAttribute="bottom" constant="8" symbolic="YES" id="itn-wf-vo0"/>
                             <constraint firstItem="20v-R7-lhj" firstAttribute="leading" secondItem="mXG-jH-zAO" secondAttribute="leading" id="kbc-Qa-trf"/>
-                            <constraint firstItem="zP2-wg-Ubd" firstAttribute="top" secondItem="PWt-2j-iTK" secondAttribute="bottom" constant="19" id="nbJ-1M-pd5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JLc-tw-lNO" secondAttribute="bottom" constant="407" id="pbq-N8-G8r"/>
+                            <constraint firstItem="zP2-wg-Ubd" firstAttribute="top" secondItem="PWt-2j-iTK" secondAttribute="bottom" constant="8" id="nbJ-1M-pd5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JLc-tw-lNO" secondAttribute="bottom" constant="426" id="pbq-N8-G8r"/>
                             <constraint firstItem="Hnw-j8-GiU" firstAttribute="trailing" secondItem="JLc-tw-lNO" secondAttribute="trailing" id="qBE-fN-p0L"/>
                             <constraint firstItem="1HX-bN-G9e" firstAttribute="leading" secondItem="5Zd-rl-pml" secondAttribute="leading" id="uKE-zJ-aHm"/>
                             <constraint firstItem="Phz-gN-oHG" firstAttribute="trailing" secondItem="LZ4-pz-TS4" secondAttribute="trailing" id="wYy-vA-P68"/>

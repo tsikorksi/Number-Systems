@@ -2,7 +2,7 @@
 //  Normalisation.swift
 //  Number System
 //
-//  Created by Anthony Ford on 29/09/2017.
+//  Created by Anthony Ford and Tad Sikorski on 29/09/2017.
 //  Copyright © 2017 Anthony Ford. All rights reserved.
 //
 
@@ -30,23 +30,8 @@ class Normalisation: UIViewController {
             var ArrayE = Array(InputE.text!.characters)//Array of Exponent
             if ArrayM[0] == "1"{
                 while ArrayM[1] == "1"{
-                    while carry == 1 && count <= ArrayE.count{
-                        if ArrayM[ArrayM.count - count] == "1"{
-                            ArrayM[ArrayM.count - count] = "0"
-                            count += 1
-                        }
-                        else{
-                            carry = 0
-                        }
-                    }
-                    if carry == 1{
-                        ArrayE.insert("1", at: 0)
-                    }
-                    ArrayM.remove(at: 1)
-                }
-            }
-            else{
-                while ArrayM[1] == "0"{
+                    carry = 1
+                    count = 1
                     while carry == 1 && count <= ArrayE.count{
                         if ArrayE[ArrayE.count - count] == "1"{
                             ArrayE[ArrayE.count - count] = "0"
@@ -57,15 +42,38 @@ class Normalisation: UIViewController {
                             carry = 0
                         }
                     }
-                    if count > ArrayE.count{
+                    if carry == 1{
                         ArrayE.insert("1", at: 0)
                     }
                     ArrayM.remove(at: 1)
                 }
+                while ArrayM.count < 8{ArrayM.append("1")}
             }
+            else{
+                while ArrayM[1] == "0"{
+                    carry = 1
+                    count = 1
+                    while carry == 1 && count <= ArrayE.count{
+                        if ArrayE[ArrayE.count - count] == "1"{
+                            ArrayE[ArrayE.count - count] = "0"
+                            count += 1
+                        }
+                        else{
+                            ArrayE[ArrayE.count - count] = "1"
+                            carry = 0
+                        }
+                    }
+                    if carry == 1{
+                        ArrayE.insert("1", at: 0)
+                    }
+                    ArrayM.remove(at: 1)
+                }
+                while ArrayM.count < 8{ArrayM.append("0")}
+            }
+            while ArrayE.count < 4{ArrayE.insert("0", at: 0)}
+            
             OutputMantissa = String(ArrayM)
             OutputExponent = String(ArrayE)
-            
         }
         OutputM.text = OutputMantissa
         OutputE.text = OutputExponent
@@ -76,5 +84,4 @@ class Normalisation: UIViewController {
     @IBAction func CloseView(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
 }

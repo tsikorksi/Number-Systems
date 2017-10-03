@@ -1,20 +1,15 @@
-//
 //  Normalisation.swift
 //  Number System
 //
 //  Created by Anthony Ford and Tad Sikorski on 29/09/2017.
 //  Copyright © 2017 Anthony Ford. All rights reserved.
-//
-
 import UIKit
 
 class Normalisation: UIViewController {
-    
     @IBOutlet weak var InputM: UITextField!
     @IBOutlet weak var InputE: UITextField!
     @IBOutlet weak var OutputM: UILabel!
     @IBOutlet weak var OutputE: UILabel!
-
     @IBAction func ConvertNow(_ sender: Any) {
         var OutputMantissa = ""
         var OutputExponent = ""

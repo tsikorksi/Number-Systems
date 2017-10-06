@@ -747,7 +747,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLc-tw-lNO">
                                 <rect key="frame" x="16" y="211" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.84326424870466321" green="0.82539900494993446" blue="0.081580977780742511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.43418412830000003" green="0.15124690069999999" blue="0.59795984449999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="A0P-hw-vOl"/>
                                 </constraints>
@@ -835,7 +835,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u9-WR-3fW">
                                 <rect key="frame" x="16" y="473" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.83926455124597044" green="0.83990446890000003" blue="0.18769444633041779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.43418412830576725" green="0.15124690073490099" blue="0.59795984454766837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Floating Point to Denary">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -882,7 +882,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.83990446891191706" green="0.69739047592065218" blue="0.72236604078326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zP2-wg-Ubd" firstAttribute="centerX" secondItem="PWt-2j-iTK" secondAttribute="centerX" id="0B6-Ye-KUz"/>

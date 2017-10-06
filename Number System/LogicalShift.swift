@@ -18,7 +18,7 @@ class LogicalShift: UIViewController {
     
     @IBAction func ShiftNow(_ sender: Any) {
         var CarryBit = [Character]()
-        CarryBit[0] = "0"
+        CarryBit.append("0")
         var NumberToOutput = ""
         var NumtoCarryBit = ""
         if InputNumber.text!.isBinaryNumber == false || InputNumber.text!.characters.count > 32{
@@ -37,9 +37,13 @@ class LogicalShift: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         else{
+            var Circular = false
+            if Selector.selectedSegmentIndex == 2{
+                Circular = true
+            }
             var InputArray = Array(InputNumber.text!.characters)
             var SignBit = [Character]()
-            SignBit[0] = "0"
+            SignBit.append("0")
             var Arithmetic = false
             if Selector.selectedSegmentIndex == 1{
                 SignBit[0] = InputArray[0]
@@ -50,29 +54,49 @@ class LogicalShift: UIViewController {
             var Shifts2 = Int(ShiftNumber2.text!)
             while Shifts1 != 0{
                 if Shifts1! < 0{
-                    CarryBit[0] = InputArray[0]
                     Shifts1! += 1
-                    InputArray.append(SignBit[0])
+                    if Circular == false{
+                        InputArray.append(SignBit[0])
+                    }
+                    else{
+                        InputArray.append(CarryBit[0])
+                    }
+                    CarryBit[0] = InputArray[0]
                     InputArray.remove(at: 0)
                 }
                 else{
-                    CarryBit[0] = InputArray[InputArray.count - 1]
                     Shifts1! -= 1
-                    InputArray.insert(SignBit[0], at: 0)
+                    if Circular == false{
+                        InputArray.insert(SignBit[0], at: 0)
+                    }
+                    else{
+                        InputArray.insert(CarryBit[0], at: 0)
+                    }
+                    CarryBit[0] = InputArray[InputArray.count - 1]
                     InputArray.remove(at: InputArray.count - 1)
                 }
             }
             while Shifts2 != 0{
                 if Shifts2! < 0{
-                    CarryBit[0] = InputArray[0]
                     Shifts2! += 1
-                    InputArray.append(SignBit[0])
+                    if Circular == false{
+                        InputArray.append(SignBit[0])
+                    }
+                    else{
+                        InputArray.append(CarryBit[0])
+                    }
+                    CarryBit[0] = InputArray[0]
                     InputArray.remove(at: 0)
                 }
                 else{
-                    CarryBit[0] = InputArray[InputArray.count - 1]
                     Shifts2! -= 1
-                    InputArray.insert(SignBit[0], at: 0)
+                    if Circular == false{
+                        InputArray.insert(SignBit[0], at: 0)
+                    }
+                    else{
+                        InputArray.insert(CarryBit[0], at: 0)
+                    }
+                    CarryBit[0] = InputArray[InputArray.count - 1]
                     InputArray.remove(at: InputArray.count - 1)
                 }
             }

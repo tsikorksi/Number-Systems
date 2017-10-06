@@ -542,12 +542,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Heh-Mt-GK7">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Heh-Mt-GK7">
                                 <rect key="frame" x="33" y="28" width="309" height="29"/>
                                 <segments>
                                     <segment title="Logical"/>
                                     <segment title="Arithmetic"/>
-                                    <segment title=""/>
+                                    <segment title="Circular"/>
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOx-Os-01t">
@@ -579,7 +579,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcS-AO-uwH">
-                                <rect key="frame" x="71" y="203" width="233" height="30"/>
+                                <rect key="frame" x="175" y="203" width="25" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -611,7 +611,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saA-Yr-gi5">
-                                <rect key="frame" x="71" y="270" width="233" height="30"/>
+                                <rect key="frame" x="175" y="270" width="25" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -627,31 +627,31 @@
                         <constraints>
                             <constraint firstItem="xcS-AO-uwH" firstAttribute="trailing" secondItem="saA-Yr-gi5" secondAttribute="trailing" id="0ip-5J-5E1"/>
                             <constraint firstItem="Ixx-Bx-Lnu" firstAttribute="leading" secondItem="Bf1-hq-0YN" secondAttribute="leadingMargin" constant="-50" id="3CJ-BN-loP"/>
+                            <constraint firstItem="Heh-Mt-GK7" firstAttribute="centerX" secondItem="xcS-AO-uwH" secondAttribute="centerX" id="3Do-oa-uuX"/>
                             <constraint firstItem="bOx-Os-01t" firstAttribute="top" secondItem="Vof-Ak-PK9" secondAttribute="bottom" constant="8" symbolic="YES" id="68S-Xc-HnO"/>
-                            <constraint firstItem="Vof-Ak-PK9" firstAttribute="top" secondItem="Heh-Mt-GK7" secondAttribute="bottom" constant="25" id="8Zy-du-ksZ"/>
                             <constraint firstItem="bOx-Os-01t" firstAttribute="trailing" secondItem="pyp-eZ-bLL" secondAttribute="trailing" id="BGK-ag-w9C"/>
                             <constraint firstItem="olg-wt-fc0" firstAttribute="top" secondItem="saA-Yr-gi5" secondAttribute="bottom" constant="28" id="BiU-NE-wt5"/>
                             <constraint firstItem="xCV-cQ-Deg" firstAttribute="centerX" secondItem="hqg-Fq-k8k" secondAttribute="centerX" id="CSJ-Gf-Zr2"/>
                             <constraint firstItem="bOx-Os-01t" firstAttribute="leading" secondItem="pyp-eZ-bLL" secondAttribute="leading" id="DMX-1i-LXA"/>
+                            <constraint firstItem="Heh-Mt-GK7" firstAttribute="top" secondItem="er2-tK-BCn" secondAttribute="bottom" constant="8" symbolic="YES" id="DUt-FW-cbN"/>
                             <constraint firstItem="xcS-AO-uwH" firstAttribute="centerX" secondItem="2z5-kZ-voC" secondAttribute="centerX" id="Dqo-Rw-2vt"/>
-                            <constraint firstItem="Heh-Mt-GK7" firstAttribute="trailing" secondItem="xcS-AO-uwH" secondAttribute="trailing" id="Gp7-cO-ga0"/>
-                            <constraint firstItem="Heh-Mt-GK7" firstAttribute="top" secondItem="er2-tK-BCn" secondAttribute="bottom" constant="8" symbolic="YES" id="MlX-UF-05Q"/>
+                            <constraint firstItem="Vof-Ak-PK9" firstAttribute="top" secondItem="Heh-Mt-GK7" secondAttribute="bottom" constant="25" id="IUm-ks-UmR"/>
                             <constraint firstItem="saA-Yr-gi5" firstAttribute="top" secondItem="2z5-kZ-voC" secondAttribute="bottom" constant="8" symbolic="YES" id="W4B-gx-EjX"/>
                             <constraint firstItem="xcS-AO-uwH" firstAttribute="top" secondItem="Ixx-Bx-Lnu" secondAttribute="bottom" constant="8" symbolic="YES" id="X3j-w1-9oY"/>
                             <constraint firstItem="pyp-eZ-bLL" firstAttribute="centerX" secondItem="xCV-cQ-Deg" secondAttribute="centerX" id="XxS-hW-v8u"/>
                             <constraint firstItem="Vof-Ak-PK9" firstAttribute="centerX" secondItem="bOx-Os-01t" secondAttribute="centerX" id="Yt1-Yj-FHR"/>
+                            <constraint firstItem="Heh-Mt-GK7" firstAttribute="leading" secondItem="Vof-Ak-PK9" secondAttribute="leading" id="ZlW-3O-3Wk"/>
                             <constraint firstItem="bOx-Os-01t" firstAttribute="leading" secondItem="Bf1-hq-0YN" secondAttribute="leadingMargin" id="ajG-vI-xRc"/>
                             <constraint firstItem="olg-wt-fc0" firstAttribute="centerX" secondItem="pyp-eZ-bLL" secondAttribute="centerX" id="bO6-pa-QJL"/>
+                            <constraint firstItem="Heh-Mt-GK7" firstAttribute="trailing" secondItem="Vof-Ak-PK9" secondAttribute="trailing" id="bW4-ni-3AB"/>
                             <constraint firstAttribute="bottom" secondItem="hqg-Fq-k8k" secondAttribute="bottom" constant="20" symbolic="YES" id="gTv-0C-CuG"/>
                             <constraint firstItem="xcS-AO-uwH" firstAttribute="leading" secondItem="saA-Yr-gi5" secondAttribute="leading" id="hVe-AZ-i3s"/>
-                            <constraint firstItem="Heh-Mt-GK7" firstAttribute="leading" secondItem="xcS-AO-uwH" secondAttribute="leading" id="hqz-NZ-qdq"/>
                             <constraint firstItem="Ixx-Bx-Lnu" firstAttribute="top" secondItem="bOx-Os-01t" secondAttribute="bottom" constant="8" symbolic="YES" id="ioi-e8-ygk"/>
                             <constraint firstItem="bOx-Os-01t" firstAttribute="trailing" secondItem="Bf1-hq-0YN" secondAttribute="trailingMargin" id="k2G-g4-R9J"/>
                             <constraint firstItem="2z5-kZ-voC" firstAttribute="top" secondItem="xcS-AO-uwH" secondAttribute="bottom" constant="8" symbolic="YES" id="kxO-3H-qOh"/>
                             <constraint firstItem="xCV-cQ-Deg" firstAttribute="top" secondItem="pyp-eZ-bLL" secondAttribute="bottom" constant="8" symbolic="YES" id="pW5-Iu-Gwv"/>
                             <constraint firstItem="pyp-eZ-bLL" firstAttribute="top" secondItem="olg-wt-fc0" secondAttribute="bottom" constant="8" symbolic="YES" id="sax-xZ-0pR"/>
                             <constraint firstItem="bOx-Os-01t" firstAttribute="centerX" secondItem="Ixx-Bx-Lnu" secondAttribute="centerX" id="yXf-Cx-xH5"/>
-                            <constraint firstItem="Heh-Mt-GK7" firstAttribute="centerX" secondItem="Vof-Ak-PK9" secondAttribute="centerX" id="yZI-Rp-IY9"/>
                         </constraints>
                     </view>
                     <connections>

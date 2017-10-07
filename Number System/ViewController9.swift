@@ -60,7 +60,6 @@ class ViewController9: UIViewController {
                 NumberToOutput = NumberToOutput + String(binaryArray[binaryArray.count - size])
                 size -= 1
             }
-            
             for character in NumberToOutput.characters{
                 if character != "-"{
                     RealNumberToOutput = RealNumberToOutput + "\(character)"
@@ -75,8 +74,6 @@ class ViewController9: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
 
 }

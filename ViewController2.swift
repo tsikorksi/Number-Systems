@@ -40,22 +40,14 @@ class ViewController2: UIViewController {
                 NumberToOutput = NumberToOutput + String(binaryArray[binaryArray.count - size])
                 size -= 1
             }
-            
         }
         OutputNumber.text = NumberToOutput
         self.view.endEditing(true)
     }
-    
-    
-    
-    
     @IBAction func CloseView(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
 }

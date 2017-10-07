@@ -56,7 +56,6 @@ class ViewController4: UIViewController {
     @IBAction func CloseView(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

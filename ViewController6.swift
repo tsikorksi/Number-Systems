@@ -110,20 +110,14 @@ class ViewController6: UIViewController {
             outputString = outputString! + binaryArray[binaryArray.count - size]
             size -= 1
         }
-        
         OutputNumber.text = outputString
         self.view.endEditing(true)
     }
-    
-    
     @IBAction func CloseView(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-    
 }
 

@@ -67,7 +67,6 @@ class ViewController8: UIViewController {
                 BinaryArray1.removeFirst()
                 ResultArray.append(NextNumber)
             }
-            
             if BinaryArray1.count != 0{
                 var size2 = BinaryArray1.count
                 while size2 > 0{
@@ -106,20 +105,15 @@ class ViewController8: UIViewController {
                 NumberToOutput = NumberToOutput! + String(ResultArray[ResultArray.count - size3])
                 size3 -= 1
             }
-            
         }
         OutputNumber.text = NumberToOutput!
         self.view.endEditing(true)
     }
-    
     @IBAction func CloseView(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
 

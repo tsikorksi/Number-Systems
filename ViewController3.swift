@@ -16,15 +16,9 @@ extension String{
 }
 class ViewController3: UIViewController {
 //Binary to Denary
-    
-    
-
     @IBOutlet weak var EnteredNumber: UITextField!
     @IBOutlet weak var convertedNumber: UILabel!
-        
-    
     @IBAction func ConvertNow(_ sender: Any) {
-
         var theNumber = String(EnteredNumber.text!)
         var BinaryCharacterValue: Int = Int(pow(Double(2), Double(theNumber!.characters.count-1)))
         var ResultNumber = 0
@@ -34,7 +28,6 @@ class ViewController3: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         else {
-            
         for character in theNumber!.characters{
                 if character == "1"{
                     ResultNumber = ResultNumber + BinaryCharacterValue
@@ -45,11 +38,9 @@ class ViewController3: UIViewController {
         convertedNumber.text = "\(ResultNumber)"
         self.view.endEditing(true)
     }
-
     @IBAction func ReturntoMenu(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-
     override func viewDidLoad() {
             super.viewDidLoad()
     }

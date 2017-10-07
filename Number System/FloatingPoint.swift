@@ -22,7 +22,6 @@ class FloatingPoint: UIViewController {
             let alert = UIAlertController(title: "Invalid Number", message: "You Must Input a Mantissa up to 32 bits long and an exponent up to 8 bits long", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-
         }
         else{
             var carry = 1
@@ -101,10 +100,8 @@ class FloatingPoint: UIViewController {
                 Array2.append(Array1[0])
                 Array1.remove(at: 0)
             }
-            
             theNumber = String(Array2)
             ResultNumber = 0
-            
             var BinaryCharacterValue2: Int = Int(pow(Double(2), Double(theNumber.characters.count-1)))
             for character in theNumber.characters{
                 if character == "1"{
@@ -131,9 +128,7 @@ class FloatingPoint: UIViewController {
     @IBAction func Closeview(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }

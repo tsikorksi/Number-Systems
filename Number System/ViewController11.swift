@@ -19,7 +19,6 @@ class ViewController11: UIViewController {
     @IBOutlet weak var InputNumber: UITextField!
     @IBOutlet weak var OutputNumber: UILabel!
     @IBOutlet weak var OutputText: UILabel!
-    
     @IBAction func ConvertNow(_ sender: Any) {
         var NumberToOutput = ("")
         if InputNumber.text!.isDecNumeric == false{
@@ -69,9 +68,7 @@ class ViewController11: UIViewController {
                 DecimalArray.append(GENERICARRAY1[GENERICARRAY1.count - size2])
                 size2 -= 1
             }
-            
             //DecimalString is Decimal side of Number
-            
                 var re = Int()
                 var binaryArray = [Int]()
                 var NumberToConvert = Int(IntegerString)
@@ -110,7 +107,6 @@ class ViewController11: UIViewController {
                 NumberToOutput = NumberToOutput + "\(binaryArray[binaryArray.count-size3])"
                 size3 -= 1
             }
-            
         }
         OutputNumber.text = NumberToOutput
     }

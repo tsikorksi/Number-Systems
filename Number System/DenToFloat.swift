@@ -109,7 +109,6 @@ class DenToFloat: UIViewController {
             var exponentInteger = 0
             var Negexponent = false
             if pointposition == 1{
-            
                 while binaryArray[1] == 0{
                     binaryArray.remove(at: 1)
                     exponentInteger -= 1
@@ -188,7 +187,6 @@ class DenToFloat: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     @IBAction func CloseView(_ Sender: Any){
         self.dismiss(animated: true, completion: nil)

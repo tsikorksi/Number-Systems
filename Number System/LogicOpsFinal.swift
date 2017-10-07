@@ -7,14 +7,9 @@
 //
 
 import UIKit
-
 class LogicOpsFinal: UIViewController {
-    
     @IBOutlet weak var Input1: UITextField!
     @IBOutlet weak var Input2: UITextField!
-
-    
-    
     @IBOutlet weak var Input2Label: UILabel!
     @IBOutlet weak var OperationSelect: UISegmentedControl!
     //Inputs and other required interactions with View.
@@ -101,7 +96,6 @@ class LogicOpsFinal: UIViewController {
                         OutputArray.append("0")
                     }
                 }
-                
             }
             else if selectorindex == 3{//NOR
                 for i in 1...Array1.count{

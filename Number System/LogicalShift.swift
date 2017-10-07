@@ -51,7 +51,7 @@ class LogicalShift: UIViewController {
                 Arithmetic = true
             }
             var Shifts1 = Int(ShiftNumber.text!)
-            var Shifts2 = Int(ShiftNumber2.text!)
+            var Shifts2 = Int(ShiftNumber.text!) 
             while Shifts1 != 0{
                 if Shifts1! < 0{
                     Shifts1! += 1

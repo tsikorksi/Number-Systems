@@ -16,7 +16,7 @@ extension String{
     }
 }
 class ViewController5: UIViewController {
-    
+    //Hex to Denary
 
     @IBOutlet weak var InputNumber: UITextField!
     @IBOutlet weak var OutputNumber: UILabel!

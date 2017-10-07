@@ -15,7 +15,7 @@ extension String{
     }
 }
 class ViewController11: UIViewController {
-    
+    //DenaryToFixedPoint
     @IBOutlet weak var InputNumber: UITextField!
     @IBOutlet weak var OutputNumber: UILabel!
     @IBOutlet weak var OutputText: UILabel!

@@ -18,6 +18,7 @@ class ViewController8: UIViewController {
     @IBOutlet weak var InputNumber2: UITextField!
     
     @IBAction func AddNow(_ sender: Any) {
+        //BinaryAddition
         var NumberToOutput = String("")
         if InputNumber1.text!.isBinaryNumber == false{
             let alert = UIAlertController(title: "One or More Invalid Numbers", message: "You Must Input two Binary Integers", preferredStyle: UIAlertControllerStyle.alert)
@@ -30,8 +31,6 @@ class ViewController8: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         else{
-            
-
             var BinaryArray1 = InputNumber1.text!.utf8.map{Int(($0 as UInt8)) - 48}
             var BinaryArray2 = InputNumber2.text!.utf8.map{Int(($0 as UInt8)) - 48}
             if BinaryArray2.count > BinaryArray1.count{

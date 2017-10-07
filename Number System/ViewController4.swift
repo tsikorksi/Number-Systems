@@ -14,6 +14,7 @@ class ViewController4: UIViewController {
     @IBOutlet weak var OutputNumber: UILabel!
     
     @IBAction func ConvertNumber(_ sender: Any) {
+        //Denary to Hex
         var NumberToConvert = Int(InputNumber.text!)
         var NumberToOutput = String()
         var re = Int()
@@ -22,9 +23,6 @@ class ViewController4: UIViewController {
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
-
-        
-        
         else {
             while NumberToConvert != 0{
                 re = NumberToConvert! % 16

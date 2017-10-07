@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController6: UIViewController {
-    
+    //Hex To Binary
     @IBOutlet weak var InputNumber: UITextField!
     @IBOutlet weak var OutputNumber: UILabel!
     

@@ -15,7 +15,7 @@ extension String{
     }
 }
 class ViewController2: UIViewController {
-    
+    //Denary to Binary
     @IBOutlet weak var OutputNumber: UILabel!
     @IBOutlet weak var InputNumber: UITextField!
     @IBAction func ConvertNow(_ sender: Any) {

@@ -7,7 +7,7 @@
 import UIKit
 
 class ViewController10: UIViewController {
-    
+    //Two's Compliment
     @IBOutlet weak var OutputNumber: UILabel!
     @IBOutlet weak var InputNumber: UITextField!
     @IBAction func ConvertNow(_ sender: Any) {

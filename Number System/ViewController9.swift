@@ -14,11 +14,9 @@ extension String{
 }
 
 class ViewController9: UIViewController {
-    
-    
+    //SignAndMagnitude
     @IBOutlet weak var InputNumber: UITextField!
     @IBOutlet weak var OutputNumber: UILabel!
-    
     @IBAction func ConvertNow(_ sender: Any) {
         var NumberToOutput = ("")
         var RealNumberToOutput = ("")
@@ -33,7 +31,7 @@ class ViewController9: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         else if Int(InputNumber.text!)! < -127{
-            let alert = UIAlertController(title: "Invalid Number", message: "You Must Input a Denary Integer less than 128 and bigger than -128", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "Invalid Number", message: "You Must Input a Denary Integer less than 127 and bigger than -127", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }

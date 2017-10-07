@@ -15,7 +15,7 @@ extension String{
     }
 }
 class ViewController3: UIViewController {
-
+//Binary to Denary
     
     
 

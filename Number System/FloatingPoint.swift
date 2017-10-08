@@ -9,15 +9,14 @@
 import UIKit
 
 class FloatingPoint: UIViewController {
-
     @IBOutlet weak var InputMantissa: UITextField!
     @IBOutlet weak var InputExponent: UITextField!
     @IBOutlet weak var OutputNumber: UILabel!
-    
     @IBAction func ConvertNow(_ sender: Any) {
         var NumbertoOutput = ""
         var ResultNumber = Int()
-        var DecimalInt = Int()  
+        var DecimalInt = 0
+        var DecimalString = ""
         if InputMantissa.text!.isBinaryNumber == false || InputExponent.text!.isBinaryNumber == false || InputMantissa.text!.characters.count > 32 || InputExponent.text!.characters.count > 32{
             let alert = UIAlertController(title: "Invalid Number", message: "You Must Input a Mantissa up to 32 bits long and an exponent up to 8 bits long", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
@@ -110,19 +109,30 @@ class FloatingPoint: UIViewController {
                 BinaryCharacterValue2 = BinaryCharacterValue2 / 2
             }
             var theDecimalNumber = ""
-            for i in 1...Array1.count{
-                theDecimalNumber = theDecimalNumber + "\(Array1[i-1])"
-            }
-            var startvalue = 5 * Int(pow(Double(10), Double(11)))
-            
-            for i in 1...Array1.count{
-                if Array1[i-1] == "1"{
-                    DecimalInt = DecimalInt + startvalue
+            if Array1.count > 0{
+                for i in 1...Array1.count{
+                    theDecimalNumber = theDecimalNumber + "\(Array1[i-1])"
                 }
-                startvalue = startvalue / 2
+                var startvalue = 5 * Int(pow(Double(10), Double(11)))
+                for i in 1...Array1.count{
+                    if Array1[i-1] == "1"{
+                        DecimalInt = DecimalInt + startvalue
+                    }
+                    startvalue = startvalue / 2
+                }
+            }
+            var ArrayDecimal = Array("\(DecimalInt)".characters)
+            if ArrayDecimal.count != 0{
+                ArrayDecimal.insert(".", at: 0)
+                while ArrayDecimal.count > 0{
+                    if ArrayDecimal[ArrayDecimal.count - 1] == "0" || ArrayDecimal[ArrayDecimal.count - 1] == "."{
+                        ArrayDecimal.remove(at: ArrayDecimal.count - 1)
+                    }
+                    DecimalString = String(ArrayDecimal)
+                }
             }
         }
-        NumbertoOutput = NumbertoOutput + "\(ResultNumber)" + "." + "\(DecimalInt)"
+        NumbertoOutput = NumbertoOutput + "\(ResultNumber)" + DecimalString
         OutputNumber.text = NumbertoOutput
     }
     @IBAction func Closeview(_ sender: Any) {

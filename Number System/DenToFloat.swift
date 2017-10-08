@@ -44,10 +44,14 @@ class DenToFloat: UIViewController {
                 }
             }
             var size = count
+            
             var IntegerArray = [Character]()
-            while size > 0{
+            while size > -1{
                 IntegerArray.append(GENERICARRAY1[count - size])
                 size -= 1
+            }
+            if IntegerArray[IntegerArray.count - 1] == "."{
+                IntegerArray.remove(at: IntegerArray.count - 1 )
             }
             let IntegerString = String(IntegerArray)
             //IntegerString Is Integer Side of Number
@@ -61,16 +65,20 @@ class DenToFloat: UIViewController {
                     count += 1
                 }
             }
+            
             var DecimalArray = [Character]()
             var size2 = count - 1
-            while size2 > 0{
-                DecimalArray.append(GENERICARRAY1[GENERICARRAY1.count - size2])
-                size2 -= 1
+            if count != GENERICARRAY1.count{
+                while size2 > 0{
+                    DecimalArray.append(GENERICARRAY1[GENERICARRAY1.count - size2])
+                    size2 -= 1
+                }
             }
             //DecimalString is Decimal side of Number
             var re = Int()
             var binaryArray = [Int]()
             var NumberToConvert = Int(IntegerString)
+            
             while NumberToConvert != 0{
                 re = NumberToConvert! % 2
                 NumberToConvert = NumberToConvert! / 2
@@ -79,9 +87,9 @@ class DenToFloat: UIViewController {
             binaryArray.reverse()
             //Integer Side Converted to Binary Array
             var pointposition = 0
-            while binaryArray[0] == 0 && binaryArray.count != 0{
-                binaryArray.remove(at: 0)
-            }
+                while binaryArray[0] == 0 && binaryArray.count != 0{
+                    binaryArray.remove(at: 0)
+                }
             binaryArray.insert(0, at: 0)
             pointposition = binaryArray.count
             count = 0
